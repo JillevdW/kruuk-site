@@ -72,7 +72,7 @@ export default function RootLayout({
         </div>
         {/* <ThemeSwitcher /> */}
         <div className="flex flex-col">
-          <div className="min-h-screen">{children}</div>
+          <div className="">{children}</div>
           <div className="flex-grow"></div>
           <Footer />
         </div>
