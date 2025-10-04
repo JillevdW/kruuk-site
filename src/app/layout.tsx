@@ -58,11 +58,24 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
-        className={cn(inter.className, "dark:bg-slate-950 dark:text-slate-300 bg-[#FEFEFE]")}
+        className={cn(inter.className, "relative dark:bg-slate-950 dark:text-slate-300 bg-[#FEFEFE] overflow-y-scroll overflow-x-clip flex flex-col")}
       >
+        <div className="w-full h-full absolute overflow-auto z-[-1]">
+          <iframe className="
+            w-full h-full absolute top-[150px] z-[-1] max-h-screen max-w-screen
+            pointer-events-none user-select-none
+            hidden md:block
+            scale-[1.7] lg:scale-[2]
+          "
+            src="https://www.youtube.com/embed/DD-kQYgZHPM?playlist=DD-kQYgZHPM&loop=1&autoplay=1&mute=1&controls=0&start=38" // 168 is cool too
+          />
+        </div>
         {/* <ThemeSwitcher /> */}
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+        <div className="flex flex-col">
+          <div className="min-h-screen">{children}</div>
+          <div className="flex-grow"></div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
