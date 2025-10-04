@@ -45,7 +45,7 @@ export function Wristband({
     <div className="group">
     <Link href={url} className="">
         <div className={
-            `${color.bg} ${color.text} font-bold font-serif flex`
+            `${color.bg} ${color.text} font-bold font-serif flex shadow-md hover-group:shadow-xl`
         }>
             <div className="
                 bg-slate-100 w-20 flex-none ml-3
