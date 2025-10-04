@@ -72,10 +72,10 @@ export function Wristband({
                 bg-slate-100 text-slate-700 leading-4 not-italic text-4xl
                 grid gap-0 justify-center content-center
             ">
-                <Image className="opacity-[.40]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
-                <Image className="opacity-[.40]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
-                <Image className="opacity-[.40]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
-                <Image className="opacity-[.40]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
+                <Image className="opacity-[.40] scale-[.70]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
+                <Image className="opacity-[.40] scale-[.70]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
+                <Image className="opacity-[.40] scale-[.70]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
+                <Image className="opacity-[.40] scale-[.70]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
             </div>
     
         </div>
