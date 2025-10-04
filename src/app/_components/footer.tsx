@@ -9,7 +9,7 @@ export function Footer() {
       <Container>
         <div className="flex content-center justify-center pt-48 pb-8">
           <div className="flex-grow"></div>
-          <div className="flex content-center justify-center bg-slate-800 bg-opacity-70 rounded-lg">
+          <div className="flex content-center justify-center bg-gray-200 dark:bg-slate-800 bg-opacity-70 dark:bg-opacity-70 rounded-lg">
           <Link href="https://open.spotify.com/artist/5WtVI5nBs62jIhw7OQxfxr" className="m-4 flex items-center">
             <Image src={imageURL("/assets/images/socials/spotify.svg")} width={40} height={40} alt="Spotify icon" className="block dark:hidden"></Image>
             <Image src={imageURL("/assets/images/socials/spotify_light.svg")} width={40} height={40} alt="Spotify icon" className="hidden dark:block"></Image>
