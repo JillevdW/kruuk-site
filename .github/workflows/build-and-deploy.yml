@@ -13,7 +13,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm ci
-          npm run build-prod
+          npm run build
           cd out
           touch .nojekyll
         env:
