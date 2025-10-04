@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "class",
+  // darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -20,6 +20,12 @@ const config: Config = {
         "accent-7": "#333",
         success: "#0070f3",
         cyan: "#79FFE1",
+        "band-pink": "#F83BA4",
+        "band-blue": "#0259C9",
+        "band-light-blue": "#8CD0E2",
+        "band-yellow": "#D1FE00",
+        "band-green": "#83F007",
+        "band-purple": "#700DCD",
       },
       spacing: {
         28: "7rem",

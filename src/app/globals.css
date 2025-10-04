@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@theme {
+    --color-band-pink: #F83BA4;
+    --color-band-blue: #0259C9;
+    --color-band-ligt-blue: #8CD0E2;
+    --color-band-yellow: #D1FE00;
+    --color-band-green: #83F007;
+    --color-band-purple: #700DCD;
+}
+
+.scrap_1 {
+    background-image: url("/assets/images/scraps/scrap_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scrap_2 {
+    background-image: url("/assets/images/scraps/scrap_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scrap_3 {
+    background-image: url("/assets/images/scraps/scrap_3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scrap_4 {
+    background-image: url("/assets/images/scraps/scrap_4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scrap_5 {
+    background-image: url("/assets/images/scraps/scrap_5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scrap_6 {
+    background-image: url("/assets/images/scraps/scrap_6.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

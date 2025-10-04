@@ -26,3 +26,9 @@ export function getAllPosts(): Post[] {
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
 }
+
+export function getScrapImages(): string[] {
+    const scrapFiles = fs.readdirSync(join(process.cwd(), "public/assets/images/scraps"));
+    return scrapFiles
+      .map(e => { return e.substring(0, e.length - 4); })
+}

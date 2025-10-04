@@ -2,6 +2,7 @@ import Container from "@/app/_components/container";
 import { HeroPost } from "@/app/_components/hero-post";
 import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";
+import { GigList } from "@/app/components/giglist";
 import { getAllPosts } from "@/lib/api";
 
 export default function Index() {
@@ -15,7 +16,10 @@ export default function Index() {
     <main>
       <Container>
         <Intro />
-        <HeroPost
+
+        <GigList />
+
+        {/* <HeroPost
           title={heroPost.title}
           coverImage={heroPost.coverImage}
           date={heroPost.date}
@@ -23,7 +27,9 @@ export default function Index() {
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
         />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
+
+
       </Container>
     </main>
   );
