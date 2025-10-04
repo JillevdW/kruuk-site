@@ -1,6 +1,5 @@
 import { join } from "path";
 
-const postsDirectory = join(process.cwd(), "_posts");
 const artistID = "15552460";
 
 type Artist = {
