@@ -4,7 +4,6 @@
 
 const nextConfig = {
     output: 'export',
-    basePath: '/kruuk-site',
     images: { 
         unoptimized: true 
     }

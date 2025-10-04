@@ -16,7 +16,6 @@ jobs:
           npm run deploy
         env:
           BANDSINTOWN_API_KEY: ${{ secrets.BANDSINTOWN_API_KEY }}
-          BASE_PATH: kruuk-site
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
