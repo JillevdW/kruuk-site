@@ -57,8 +57,8 @@ export function Wristband({
                 <Image className="" src={imageURL("/assets/images/squiggle.svg")} alt="Squiggle on the wristband." width={16} height={40}></Image>
             </div>
 
-            <div className="flex-1 pl-2 md:pl-4">
-                <div className="flex-1 group-hover:underline text-sm md:text-xl">
+            <div className="flex-1 pl-2 md:pl-4 flex flex-col justify-center">
+                <div className="group-hover:underline text-sm md:text-xl">
                 {city} - {venueName}
                 </div>
 
