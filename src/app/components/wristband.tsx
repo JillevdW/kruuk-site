@@ -2,6 +2,7 @@ import DateFormatter from "@/app/_components/date-formatter";
 import { getScrapImages } from "@/lib/api";
 import Link from "next/link";
 import Image from 'next/image'
+import { imageURL } from "@/lib/imageurl";
 
 type Props = {
   title: string;
@@ -50,10 +51,10 @@ export function Wristband({
             bg-slate-100 w-20 flex-none ml-3
             grid justify-center content-center grid-cols-4 p-2
         ">
-            <Image className="" src="/assets/images/squiggle.svg" alt="Squiggle on the wristband." width={16} height={40}></Image>
-            <Image className="" src="/assets/images/squiggle.svg" alt="Squiggle on the wristband." width={16} height={40}></Image>
-            <Image className="" src="/assets/images/squiggle.svg" alt="Squiggle on the wristband." width={16} height={40}></Image>
-            <Image className="" src="/assets/images/squiggle.svg" alt="Squiggle on the wristband." width={16} height={40}></Image>
+            <Image className="" src={imageURL("/assets/images/squiggle.svg")} alt="Squiggle on the wristband." width={16} height={40}></Image>
+            <Image className="" src={imageURL("/assets/images/squiggle.svg")} alt="Squiggle on the wristband." width={16} height={40}></Image>
+            <Image className="" src={imageURL("/assets/images/squiggle.svg")} alt="Squiggle on the wristband." width={16} height={40}></Image>
+            <Image className="" src={imageURL("/assets/images/squiggle.svg")} alt="Squiggle on the wristband." width={16} height={40}></Image>
         </div>
 
         <div className="flex-1 p-4 group-hover:underline text-sm md:text-xl">
@@ -69,10 +70,10 @@ export function Wristband({
             bg-slate-100 text-slate-700 leading-4 not-italic text-4xl
             grid gap-0 justify-center content-center
         ">
-            <Image className="opacity-[.40]" src="/assets/images/arrow.svg" alt="Arrow on the wristband." width={30} height={10}></Image>
-            <Image className="opacity-[.40]" src="/assets/images/arrow.svg" alt="Arrow on the wristband." width={30} height={10}></Image>
-            <Image className="opacity-[.40]" src="/assets/images/arrow.svg" alt="Arrow on the wristband." width={30} height={10}></Image>
-            <Image className="opacity-[.40]" src="/assets/images/arrow.svg" alt="Arrow on the wristband." width={30} height={10}></Image>
+            <Image className="opacity-[.40]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
+            <Image className="opacity-[.40]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
+            <Image className="opacity-[.40]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
+            <Image className="opacity-[.40]" src={imageURL("/assets/images/arrow.svg")} alt="Arrow on the wristband." width={30} height={10}></Image>
         </div>
     
         </div>
