@@ -37,9 +37,8 @@ export function GigList(
       </h2> */}
       <div className="grid grid-cols-1 lg:grid-cols-8 xl:grid-cols-6">
         {gigs.map((gig, index) => (
-          <div className={"m-4 lg:col-span-6 lg:col-start-2 xl:col-span-4 xl:col-start-2 hover:scale-105 transition ease-in-out " + rotations[gigs.length%(index+1)]}>
+          <div key={index} className={"m-4 lg:col-span-6 lg:col-start-2 xl:col-span-4 xl:col-start-2 hover:scale-105 transition ease-in-out " + rotations[gigs.length%(index+1)]}>
             <Wristband
-              key={index}
               title={gig.title ?? ""}
               date={gig.datetime}
               venueName={gig.venue.name}
