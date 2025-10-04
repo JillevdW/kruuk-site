@@ -36,17 +36,28 @@ export function GigList(
         More Stories
       </h2> */}
       <div className="grid grid-cols-1 lg:grid-cols-8 xl:grid-cols-6">
-        {gigs.map((gig, index) => (
-          <div key={index} className={"m-4 lg:col-span-6 lg:col-start-2 xl:col-span-4 xl:col-start-2 hover:scale-105 transition ease-in-out " + rotations[gigs.length%(index+1)]}>
-            <Wristband
-              title={gig.title ?? ""}
-              date={gig.datetime}
-              venueName={gig.venue.name}
-              city={gig.venue.city}
-              url={gig.url}
-            />
-          </div>
-        ))}
+        {gigs.length > 0 
+          ? gigs.map((gig, index) => (
+            <div key={index} className={"m-4 lg:col-span-6 lg:col-start-2 xl:col-span-4 xl:col-start-2 hover:scale-105 transition ease-in-out " + rotations[gigs.length%(index+1)]}>
+              <Wristband
+                title={gig.title ?? ""}
+                date={gig.datetime}
+                venueName={gig.venue.name}
+                city={gig.venue.city}
+                url={gig.url}
+              />
+            </div>
+          ))
+          : <div className={"m-4 lg:col-span-6 lg:col-start-2 xl:col-span-4 xl:col-start-2 hover:scale-105 transition ease-in-out " + rotations[1]}>
+              <Wristband
+                  title=""
+                  date={undefined}
+                  venueName="Working on it!"
+                  city="No upcoming shows"
+                  url="/"
+                />
+              </div>
+        }
       </div>
       
       {/* <div className="grid justify-items-center grid-cols-1 col gap-y-2 md:gap-y-4 mb-4">

@@ -6,7 +6,7 @@ import { imageURL } from "@/lib/imageurl";
 
 type Props = {
   title: string;
-  date: string;
+  date?: string;
   venueName: string;
   city: string;
   url: string;
@@ -62,9 +62,14 @@ export function Wristband({
                 {city} - {venueName}
                 </div>
 
-                <div className="mr-4 flex items-center text-[10px] md:text-base">
-                    <DateFormatter dateString={date} />
-                </div>
+                {
+                    date != null 
+                    ? <div className="mr-4 flex items-center text-[10px] md:text-base">
+                        <DateFormatter dateString={date} />
+                    </div>
+                    : <div></div>
+                }
+                
             </div>
 
             <div className="
