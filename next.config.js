@@ -4,6 +4,7 @@
 
 const nextConfig = {
     output: 'export',
+    basePath: '/kruuk-site',
 }
 
 module.exports = nextConfig
