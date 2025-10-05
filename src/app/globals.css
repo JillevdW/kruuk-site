@@ -18,6 +18,13 @@
     )
 }
 
+.page-background-image {
+    background-image: image-set(
+        url('/assets/images/background.avif') type('image/avif'),
+        url('/assets/images/background.jpg') type('image/jpeg')
+    )
+}
+
 .scrap_1 {
     background-image: url("/assets/images/scraps/scrap_1.png");
     background-size: contain;

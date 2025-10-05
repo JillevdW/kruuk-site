@@ -84,7 +84,7 @@ If you're looking for a band to shake up your cafe/festival/music venue, reach o
             <Container>
                 <Intro />
 
-                <div className="relative flex flex-col items-center p-16 mb-8 bg-slate-200 bg-opacity-[.80] dark:bg-slate-600 dark:bg-opacity-[.80] rounded-xl gap-8">
+                <div className="relative flex flex-col items-center p-16 mb-8 bg-slate-200 bg-opacity-[.30] dark:bg-slate-800 dark:bg-opacity-[.40] rounded-xl">
                     <button className="absolute top-0 right-0 m-4 rounded-md px-6 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white" 
                         onClick={toggleLanguage}
                     >
@@ -102,7 +102,7 @@ If you're looking for a band to shake up your cafe/festival/music venue, reach o
                         </div>
                     </div>
 
-                    <a href="/assets/presskit.zip" className="rounded-md px-6 py-2 text-lg font-medium text-gray-300 hover:cursor-pointer hover:scale-[1.05] transition ease-in-out bg-purple-600 hover:bg-purple-400 hover:text-white">
+                    <a href="/assets/presskit.zip" className="rounded-md mt-8 text-center px-6 py-2 text-lg font-medium text-gray-300 hover:cursor-pointer hover:scale-[1.05] transition ease-in-out bg-purple-600 hover:bg-purple-400 hover:text-white">
                         {downloadButtonText()}
                     </a>
                 </div>

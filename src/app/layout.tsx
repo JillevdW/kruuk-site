@@ -58,7 +58,7 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
-        className={cn(inter.className, "relative dark:bg-slate-950 dark:text-slate-300 bg-[#FEFEFE] overflow-y-scroll overflow-x-clip flex flex-col")}
+        className={cn(inter.className, "relative dark:bg-slate-950 dark:text-slate-300 bg-[#FEFEFE] page-background-image backdrop-blur-lg overflow-y-scroll overflow-x-clip flex flex-col")}
       >
         <div className="w-full h-full absolute overflow-auto z-[-1]">
           <iframe className="
