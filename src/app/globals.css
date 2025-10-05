@@ -11,6 +11,13 @@
     --color-band-purple: #700DCD;
 }
 
+.footer-image {
+    background-image: image-set(
+        url('/assets/images/banner-min.avif') type('image/avif'),
+        url('/assets/images/banner-min.jpg') type('image/jpeg')
+    )
+}
+
 .scrap_1 {
     background-image: url("/assets/images/scraps/scrap_1.png");
     background-size: contain;

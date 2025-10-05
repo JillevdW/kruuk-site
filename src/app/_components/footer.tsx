@@ -14,7 +14,7 @@ const applemusic_light = "/assets/images/socials/applemusic_light.svg";
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200 dark:border-slate-600 dark:bg-slate-800 bg-[url(/assets/images/banner-min.jpg)] bg-cover bg-center">
+    <footer className="bg-neutral-50 border-t border-neutral-200 dark:border-slate-600 dark:bg-slate-800 bg-[url(/assets/images/banner-min.avif)] bg-cover bg-center">
       <Container>
         <div className="flex content-center justify-center pt-48 pb-8">
           <div className="flex-grow"></div>
