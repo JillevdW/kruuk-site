@@ -4,7 +4,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "deploy": "next build && touch ./out/.nojekyll"
+    "deploy": "npm run prepare-presskit && next build && touch ./out/.nojekyll",
+    "prepare-presskit": "zip -r ./public/assets/presskit.zip presskit"
   },
   "dependencies": {
     "classnames": "^2.5.1",
