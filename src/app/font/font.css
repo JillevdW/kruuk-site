@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'HandwritingOne';
+    src: url('/assets/fonts/HandwritingOne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'HandwritingTwo';
+    src: url('/assets/fonts/HandwritingTwo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'HandwritingThree';
+    src: url('/assets/fonts/HandwritingThree.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'HandwritingFour';
+    src: url('/assets/fonts/HandwritingFour.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'HandwritingFive';
+    src: url('/assets/fonts/HandwritingFive.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'HandwritingSix';
+    src: url('/assets/fonts/HandwritingSix.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
