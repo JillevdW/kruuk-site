@@ -13,6 +13,8 @@ export async function exportToGif(
         throw new Error('Could not get canvas context');
     }
 
+    fontSize = fontSize * 2;
+
     const padding = 40;
 
     ctx.font = `bold ${fontSize}px ${fonts[0]}`;
@@ -24,7 +26,7 @@ export async function exportToGif(
     canvas.height = Math.ceil(textHeight + padding * 2);
     const gif = new GIF({
         workers: 2,
-        quality: 10,
+        quality: 1,
         width: canvas.width,
         height: canvas.height,
         debug: true,
