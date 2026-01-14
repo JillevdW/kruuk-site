@@ -52,6 +52,15 @@ export default function SetlistPage() {
   const ultraDenseSet = setlist.length > 24;
   const denseSet = setlist.length > 18;
   const compactSet = setlist.length > 14;
+  const printFontSize = React.useMemo(() => {
+    if (setlist.length === 0) return 16;
+    const dividerCount = setlist.filter((item) => item.kind === "divider")
+      .length;
+    const effectiveCount = setlist.length + dividerCount * 0.6;
+    const target = Math.floor(560 / effectiveCount);
+    return Math.max(11, Math.min(28, target));
+  }, [setlist]);
+  const printRowGap = Math.max(6, Math.min(18, Math.round(printFontSize * 0.6)));
 
   const handlePrint = useReactToPrint({
     contentRef: printRef,
@@ -182,22 +191,6 @@ export default function SetlistPage() {
           }
           .print-sheet * {
             visibility: visible !important;
-          }
-          .print-title {
-            font-size: 22pt !important;
-            line-height: 1.1 !important;
-          }
-          .print-meta {
-            font-size: 9pt !important;
-          }
-          .print-divider {
-            margin-top: 8pt !important;
-          }
-          .print-list {
-            gap: 6pt !important;
-          }
-          .print-list li {
-            line-height: 1.2 !important;
           }
           main {
             padding: 0 !important;
@@ -428,15 +421,12 @@ export default function SetlistPage() {
               </header>
 
               <ol
-                className={`print-list mt-8 grid ${
-                  ultraDenseSet
-                    ? "gap-1.5 text-xs"
-                    : denseSet
-                      ? "gap-2 text-sm"
-                      : compactSet
-                        ? "gap-2.5 text-base"
-                        : "gap-3 text-lg"
-                }`}
+                className="print-list mt-8 grid"
+                style={{
+                  fontSize: `${printFontSize}px`,
+                  rowGap: `${printRowGap}px`,
+                  lineHeight: 1.25,
+                }}
               >
                 {setlist.length === 0 ? (
                   <li className="text-center text-sm text-slate-400">
