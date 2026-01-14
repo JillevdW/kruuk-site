@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import { Source_Sans_3 } from "next/font/google";
+import { useReactToPrint } from "react-to-print";
 
 type Song = {
   id: string;
@@ -31,8 +33,13 @@ const SONG_LIBRARY: Song[] = [
 
 type DragSource = "library" | "setlist" | null;
 
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+});
+
 export default function SetlistPage() {
   const [bandTitle, setBandTitle] = React.useState("The Kruuk");
+  const [bandTitleSize, setBandTitleSize] = React.useState(32);
   const [venue, setVenue] = React.useState("");
   const [date, setDate] = React.useState("");
   const [query, setQuery] = React.useState("");
@@ -41,9 +48,18 @@ export default function SetlistPage() {
   const [draggingId, setDraggingId] = React.useState<string | null>(null);
   const [dragSource, setDragSource] = React.useState<DragSource>(null);
   const idCounter = React.useRef(0);
+  const printRef = React.useRef<HTMLElement | null>(null);
   const ultraDenseSet = setlist.length > 24;
   const denseSet = setlist.length > 18;
   const compactSet = setlist.length > 14;
+
+  const handlePrint = useReactToPrint({
+    contentRef: printRef,
+    documentTitle: `${bandTitle || "Setlist"}-${date || "show"}`.replace(
+      /\s+/g,
+      "-",
+    ),
+  });
 
   const filteredLibrary = React.useMemo(() => {
     const trimmed = query.trim().toLowerCase();
@@ -169,6 +185,7 @@ export default function SetlistPage() {
           }
           .print-title {
             font-size: 22pt !important;
+            line-height: 1.1 !important;
           }
           .print-meta {
             font-size: 9pt !important;
@@ -182,11 +199,14 @@ export default function SetlistPage() {
           .print-list li {
             line-height: 1.2 !important;
           }
+          main {
+            padding: 0 !important;
+          }
         }
       `}</style>
 
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10">
-        <header className="flex flex-col gap-3">
+        <header className="no-print flex flex-col gap-3">
           <p className="text-sm uppercase tracking-[0.3em] text-slate-500">
             Setlist Builder
           </p>
@@ -217,6 +237,22 @@ export default function SetlistPage() {
                   onChange={(event) => setBandTitle(event.target.value)}
                   placeholder="Band name"
                 />
+              </label>
+              <label className="flex flex-col gap-2 text-sm font-medium">
+                Band title size
+                <input
+                  type="range"
+                  min={20}
+                  max={100}
+                  value={bandTitleSize}
+                  onChange={(event) =>
+                    setBandTitleSize(Number(event.target.value))
+                  }
+                  className="accent-slate-900"
+                />
+                <span className="text-xs text-slate-500">
+                  {bandTitleSize}px
+                </span>
               </label>
               <label className="flex flex-col gap-2 text-sm font-medium">
                 Venue
@@ -306,7 +342,7 @@ export default function SetlistPage() {
               </div>
               <button
                 type="button"
-                onClick={() => window.print()}
+                onClick={handlePrint}
                 className="rounded-full bg-slate-900 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-slate-900/30 transition hover:-translate-y-0.5"
               >
                 Print / Save PDF
@@ -374,9 +410,15 @@ export default function SetlistPage() {
               )}
             </div>
 
-            <section className="print-sheet rounded-2xl border border-slate-200 bg-white p-10 shadow-2xl shadow-slate-200/70">
+            <section
+              ref={printRef}
+              className={`print-sheet rounded-2xl border border-slate-200 bg-white p-10 text-center shadow-2xl shadow-slate-200/70 ${sourceSans.className}`}
+            >
               <header className="flex flex-col gap-2 text-center">
-                <h2 className="print-title text-3xl font-semibold tracking-wide">
+                <h2
+                  className="print-title font-semibold tracking-wide"
+                  style={{ fontSize: `${bandTitleSize}px`, color: "#EAFF01" }}
+                >
                   {bandTitle || "Band Title"}
                 </h2>
                 <p className="print-meta text-sm uppercase tracking-[0.3em] text-slate-500">
@@ -402,7 +444,10 @@ export default function SetlistPage() {
                   </li>
                 ) : (
                   setlist.map((item) => (
-                    <li key={item.id} className="flex items-center gap-3">
+                    <li
+                      key={item.id}
+                      className="flex w-full items-center justify-center gap-3"
+                    >
                       {item.kind === "divider" ? (
                         item.title ? (
                           <div className="flex w-full items-center gap-3">
