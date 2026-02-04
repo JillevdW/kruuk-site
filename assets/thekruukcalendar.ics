@@ -1,0 +1,176 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//sebbo.net//ical-generator//EN
+METHOD:REQUEST
+NAME:The Kruuk Gigs
+X-WR-CALNAME:The Kruuk Gigs
+BEGIN:VEVENT
+UID:15c411b7-6508-4209-bed4-427e25d476a5
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260206T200000Z
+DTEND:20260206T210000Z
+SUMMARY:
+LOCATION:Alkmaars Bierhuis\, Alkmaar
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107461105?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:0b183671-6903-462f-9eb6-0688eb292b4d
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260219T210000Z
+DTEND:20260219T220000Z
+SUMMARY:Skatepark Haarlem
+LOCATION:Skatepark Haarlem\, Haarlem
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107414154?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:0cf36b67-1f94-4fa4-89ac-8ae31e74092a
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260227T203000Z
+DTEND:20260227T213000Z
+SUMMARY:Voorprogramma Pheromones
+LOCATION:Voorprogramma Pheromones\, Amsterdam
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107897597?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:958629cd-fc06-4653-883a-721dbde3ba20
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260228T200000Z
+DTEND:20260228T210000Z
+SUMMARY:
+LOCATION:De Groote Weiver\, Wormerveer
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107460131?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:1a1bad86-ffed-48e3-9f8e-873dacbca1eb
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260314T210000Z
+DTEND:20260314T220000Z
+SUMMARY:Stiel's
+LOCATION:Stiel's\, Haarlem
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107414149?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:6d84cad7-3cf4-4c48-87f8-b827efb8a349
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260327T203000Z
+DTEND:20260327T213000Z
+SUMMARY:
+LOCATION:The Cave Rock Club\, Amsterdam
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107580072?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:46968f38-5a5f-48b6-863a-5392c29ee191
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260402T210000Z
+DTEND:20260402T220000Z
+SUMMARY:Donderpop
+LOCATION:Donderpop\, Hoorn
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107425466?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:70a765f3-2fff-43aa-9ec7-952e6ee1d0b2
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260403T203000Z
+DTEND:20260403T213000Z
+SUMMARY:
+LOCATION:Tapperij De Verwachting\, Assendelft
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107568947?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:29075cf9-22a2-4d66-8499-2cdb4993a896
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260409T203000Z
+DTEND:20260409T213000Z
+SUMMARY:Victorie
+LOCATION:Victorie\, Alkmaar
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107568945?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:cace88c8-3466-4ac1-b8ca-100a4509f658
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260502T210000Z
+DTEND:20260502T220000Z
+SUMMARY:
+LOCATION:Podiumcafe Toos\, Beverwijk
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107529063?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:444c3622-a358-4664-9e4d-71a6253f3bf1
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260530T210000Z
+DTEND:20260530T220000Z
+SUMMARY:Out Of The Blues
+LOCATION:Out Of The Blues\, Haarlem
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107414151?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:c9d4749d-3a3f-4b1a-a2c6-5e84d19333f7
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260612T203000Z
+DTEND:20260612T213000Z
+SUMMARY:
+LOCATION:Muziekcafé De Bliksem\, Den Helder
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107580082?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+BEGIN:VEVENT
+UID:d3cf72e3-808b-4a92-9b31-10de70bf1d19
+SEQUENCE:0
+DTSTAMP:20260204T201713Z
+DTSTART:20260919T200000Z
+DTEND:20260919T210000Z
+SUMMARY:De Kroon
+LOCATION:De Kroon\, Wormerveer
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107854332?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+END:VCALENDAR
