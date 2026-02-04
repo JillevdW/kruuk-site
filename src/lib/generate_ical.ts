@@ -1,13 +1,15 @@
 import { getArtistGigs, getArtistInfo } from "@/lib/bandsintown_api";
 import ical, { ICalCalendarMethod } from 'ical-generator';
 import * as fs from 'fs';
+// import "dotenv/config"
+import { loadEnvConfig } from '@next/env'
+ 
+const projectDir = process.cwd()
+loadEnvConfig(projectDir)
 
-const data = fs.readFileSync('.env', { encoding: 'utf8', flag: 'r' });
-const appId = data.split('=')[1];
-
-getArtistInfo(appId).then(
+getArtistInfo().then(
     (artistInfo) => {
-        getArtistGigs(appId, artistInfo.name).then(
+        getArtistGigs(artistInfo.name).then(
             (gigs) => {
                 createCalendar(gigs)
             },

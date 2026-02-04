@@ -27,14 +27,14 @@ type VenueData = {
     country: string;
 }
 
-export async function getArtistInfo(appId: string): Promise<Artist> {
-    const url = `https://rest.bandsintown.com/artists/id_${artistID}?app_id=${appId}`;
+export async function getArtistInfo(): Promise<Artist> {
+    const url = `https://rest.bandsintown.com/artists/id_${artistID}?app_id=${process.env.BANDSINTOWN_API_KEY}`;
     const response = await fetch(url);
     return response.json();
 }
 
-export async function getArtistGigs(appId: string, name: string): Promise<[Gig]> {
-    const url = `https://rest.bandsintown.com/artists/${name}/events?app_id=${appId}&date=upcoming`
+export async function getArtistGigs(name: string): Promise<[Gig]> {
+    const url = `https://rest.bandsintown.com/artists/${name}/events?app_id=${process.env.BANDSINTOWN_API_KEY}&date=upcoming`
     const response = await fetch(url);
     return response.json();
 }

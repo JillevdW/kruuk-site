@@ -9,8 +9,8 @@ import { Wristband } from "./wristband";
 //   posts: Post[];
 // };
 
-let artistInfo = await getArtistInfo(process.env.BANDSINTOWN_API_KEY!);
-let gigs = await getArtistGigs(process.env.BANDSINTOWN_API_KEY!, artistInfo.name);
+let artistInfo = await getArtistInfo();
+let gigs = await getArtistGigs(artistInfo.name);
 let scrapImages = getScrapImages()
   .map(value => ({ value, sort: Math.random() }))
   .sort((a, b) => a.sort - b.sort)
