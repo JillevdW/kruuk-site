@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/lib/generate_ical.js"  ],
   "exclude": [
     "node_modules"
   ]
