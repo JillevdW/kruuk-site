@@ -31,7 +31,7 @@ export default function LivePage() {
           <div className={styles.vignette} />
         </div>
 
-        <p className={styles.kicker}>Underground Poster Motion / One Page Experience</p>
+        {/* <p className={styles.kicker}>Underground Poster Motion / One Page Experience</p> */}
 
         <h1 className={styles.title}>
           THE KRUUK
@@ -67,13 +67,11 @@ export default function LivePage() {
         <article>
           <p className={styles.metaHead}>About The Band</p>
           <p className={styles.aboutCopy}>
-            The songs lean into tension and release: melodic hooks colliding with noisy edges,
-            and lyrics that feel personal but confrontational.
+            The Kruuk is a four-piece rock band driven to turn every gig into a party. Their sound blends alternative rock with touches of ska, reggae, and punk, channeling influences like The Clash and Red Hot Chili Peppers into something punchy, raw, and LOUD.
           </p>
-          <p className={styles.aboutCopy}>
-            Live, The Kruuk aims for sweat, volume, and immediacy. The direction mirrors that:
-            unstable visuals on top, clear information below, always music first.
-          </p>
+          {/* <p className={styles.aboutCopy}>
+            
+          </p> */}
         </article>
       </section>
     </main>
