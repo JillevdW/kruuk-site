@@ -23,7 +23,7 @@ const config: Config = {
         "band-pink": "#F83BA4",
         "band-blue": "#0259C9",
         "band-light-blue": "#8CD0E2",
-        "band-yellow": "#D1FE00",
+        "band-yellow": "#FBEA26",
         "band-green": "#83F007",
         "band-purple": "#700DCD",
       },

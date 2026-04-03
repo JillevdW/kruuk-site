@@ -17,7 +17,7 @@
 }
 
 .dateCol {
-  color: #d6c52a;
+  color: #FBEA26;
   font: 700 0.66rem/1.2 "Courier New", monospace;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -49,8 +49,8 @@
 .linkCol {
   text-decoration: none;
   color: #0a0a0a;
-  background: #d6c52a;
-  border: 1px solid #d6c52a;
+  background: #FBEA26;
+  border: 1px solid #FBEA26;
   min-height: 1.9rem;
   padding: 0.2rem 0.5rem;
   display: inline-flex;
