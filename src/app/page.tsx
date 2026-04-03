@@ -1,17 +1,81 @@
-import Container from "@/app/_components/container";
-import { Intro } from "@/app/_components/intro";
-import { GigList } from "@/app/components/giglist";
+import Image from "next/image";
+import Link from "next/link";
+import { KineticGigList } from "./live/_components/kinetic-giglist";
+import styles from "./live/page.module.css";
 
-export default function Index() {
+const overlays = [
+  "APR 18 / AMSTERDAM",
+  "POST-PUNK / LIVE",
+  "KRUUK / SIDE A",
+  "CATALOG KRUUK-02",
+];
+
+export default function LivePage() {
   return (
-    <main>
-      <Container>
-        <Intro />
+    <main className={styles.page}>
+      <div className={styles.grain} />
 
-        <div className="mb-32">
-          <GigList />
+      <header className={styles.topbar}>
+        <p className={styles.topLink}>THE KRUUK</p>
+        <p className={styles.badge}>LIVE SLEEVE / 2026</p>
+        <a href="https://www.instagram.com/thekruuk" className={styles.topLink} target="_blank" rel="noreferrer">
+          INSTAGRAM
+        </a>
+      </header>
+
+      <section className={styles.hero}>
+        <div className={styles.imageLayer}>
+          <Image src="/assets/images/background.jpg" alt="Blurred black and white band portrait" fill priority sizes="100vw" />
+          <div className={styles.vignette} />
         </div>
-      </Container>
+
+        <p className={styles.kicker}>Underground Poster Motion / One Page Experience</p>
+
+        <h1 className={styles.title}>
+          THE KRUUK
+          <span>BLURRED CHAOS</span>
+        </h1>
+
+        <p className={styles.subcopy}>
+          The Kruuk is a Dutch indie/post-punk band built on sharp guitars, restless rhythm,
+          and raw live intensity. This page is designed as a moving record sleeve:
+          blurred monochrome imagery, layered poster typography, and acid-yellow metadata.
+        </p>
+
+        <div className={styles.actions}>
+          <Link href="/setlist" className={styles.primaryBtn}>Open setlist</Link>
+          <Link href="/bookers" className={styles.ghostBtn}>Booking info</Link>
+        </div>
+
+        <div className={styles.labels}>
+          {overlays.map((text, idx) => (
+            <p key={text} className={styles.label} style={{ transform: idx % 2 === 0 ? "rotate(-4deg)" : "rotate(4deg)" }}>
+              {text}
+            </p>
+          ))}
+        </div>
+
+        <p className={styles.vertical}>SIDE B / LIVE NOISE / 2026</p>
+      </section>
+
+      <section className={styles.infoGrid}>
+        <article>
+          <p className={styles.metaHead}>About The Band</p>
+          <p className={styles.aboutCopy}>
+            The songs lean into tension and release: melodic hooks colliding with noisy edges,
+            and lyrics that feel personal but confrontational.
+          </p>
+          <p className={styles.aboutCopy}>
+            Live, The Kruuk aims for sweat, volume, and immediacy. The direction mirrors that:
+            unstable visuals on top, clear information below, always music first.
+          </p>
+        </article>
+
+        <article>
+          <p className={styles.metaHead}>Upcoming Shows / Live Feed</p>
+          <KineticGigList />
+        </article>
+      </section>
     </main>
   );
 }
