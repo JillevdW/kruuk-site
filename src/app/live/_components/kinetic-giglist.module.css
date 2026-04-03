@@ -1,0 +1,87 @@
+.list {
+  list-style: none;
+  margin: 0.45rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 7.8rem 1fr auto;
+  gap: 0.65rem;
+  align-items: center;
+  border: 1px solid rgba(143, 132, 32, 0.4);
+  background: rgba(10, 10, 10, 0.74);
+  padding: 0.45rem;
+}
+
+.dateCol {
+  color: #d6c52a;
+  font: 700 0.66rem/1.2 "Courier New", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mainCol {
+  min-width: 0;
+}
+
+.venue,
+.city {
+  margin: 0;
+}
+
+.venue {
+  color: #eaeaea;
+  font: 700 0.78rem/1.2 "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.city {
+  color: #a8a8a8;
+  font: 600 0.68rem/1.25 "Arial", sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.linkCol {
+  text-decoration: none;
+  color: #0a0a0a;
+  background: #d6c52a;
+  border: 1px solid #d6c52a;
+  min-height: 1.9rem;
+  padding: 0.2rem 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: 800 0.62rem/1 "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.emptyState {
+  margin-top: 0.45rem;
+  border: 1px solid rgba(143, 132, 32, 0.4);
+  padding: 0.6rem;
+}
+
+.emptyState p {
+  margin: 0;
+  color: #a8a8a8;
+  font: 700 0.7rem/1.4 "Courier New", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 560px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .linkCol {
+    justify-self: start;
+  }
+}
