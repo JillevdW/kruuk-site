@@ -26,6 +26,7 @@ const config: Config = {
         "band-yellow": "#FBEA26",
         "band-green": "#83F007",
         "band-purple": "#700DCD",
+        "band-accent": "#FBEA26",
       },
       spacing: {
         28: "7rem",

@@ -17,7 +17,9 @@ export default function LivePage() {
 
       <header className={styles.topbar}>
         <p className={styles.topLink}>THE KRUUK</p>
-        <p className={styles.badge}>LIVE SLEEVE / 2026</p>
+        <p className={styles.badge}>
+          {/* WTFISTHEKRUUK / 2026 */}
+          </p>
         <a href="https://www.instagram.com/thekruuk" className={styles.topLink} target="_blank" rel="noreferrer">
           INSTAGRAM
         </a>
@@ -25,7 +27,7 @@ export default function LivePage() {
 
       <section className={styles.hero}>
         <div className={styles.imageLayer}>
-          <Image src="/assets/images/background.jpg" alt="Blurred black and white band portrait" fill priority sizes="100vw" />
+          <Image src="/assets/images/background2.jpeg" alt="Blurred black and white band portrait" fill priority sizes="100vw" />
           <div className={styles.vignette} />
         </div>
 
@@ -33,32 +35,35 @@ export default function LivePage() {
 
         <h1 className={styles.title}>
           THE KRUUK
-          <span>BLURRED CHAOS</span>
+          <span>I SHOULDN'T NEED IT</span>
         </h1>
 
-        <p className={styles.subcopy}>
-          The Kruuk is a Dutch indie/post-punk band built on sharp guitars, restless rhythm,
-          and raw live intensity. This page is designed as a moving record sleeve:
-          blurred monochrome imagery, layered poster typography, and acid-yellow metadata.
+        <p className={styles.subcopybold}>
+          Out now on <a href="" className="hover:underline text-band-accent">all streaming services</a>.
         </p>
 
-        <div className={styles.actions}>
+        {/* <div className={styles.actions}>
           <Link href="/setlist" className={styles.primaryBtn}>Open setlist</Link>
           <Link href="/bookers" className={styles.ghostBtn}>Booking info</Link>
-        </div>
+        </div> */}
 
-        <div className={styles.labels}>
+        {/* <div className={styles.labels}>
           {overlays.map((text, idx) => (
             <p key={text} className={styles.label} style={{ transform: idx % 2 === 0 ? "rotate(-4deg)" : "rotate(4deg)" }}>
               {text}
             </p>
           ))}
-        </div>
+        </div> */}
 
         <p className={styles.vertical}>SIDE B / LIVE NOISE / 2026</p>
       </section>
 
       <section className={styles.infoGrid}>
+        <article>
+          <p className={styles.metaHead}>Upcoming Shows / Live Feed</p>
+          <KineticGigList />
+        </article>
+
         <article>
           <p className={styles.metaHead}>About The Band</p>
           <p className={styles.aboutCopy}>
@@ -69,11 +74,6 @@ export default function LivePage() {
             Live, The Kruuk aims for sweat, volume, and immediacy. The direction mirrors that:
             unstable visuals on top, clear information below, always music first.
           </p>
-        </article>
-
-        <article>
-          <p className={styles.metaHead}>Upcoming Shows / Live Feed</p>
-          <KineticGigList />
         </article>
       </section>
     </main>

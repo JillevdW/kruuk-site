@@ -9,6 +9,7 @@
     --color-band-yellow: #FBEA26;
     --color-band-green: #83F007;
     --color-band-purple: #700DCD;
+    --color-band-accent: #FBEA26;
 }
 
 h1,
@@ -18,6 +19,12 @@ h4,
 h5,
 h6 {
     font-family: var(--font-heading), sans-serif;
+}
+
+.paragraph-arial-narrow {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .footer-image {

@@ -96,6 +96,7 @@
 .kicker,
 .title,
 .subcopy,
+.subcopybold,
 .actions,
 .labels,
 .vertical {
@@ -133,6 +134,14 @@
   max-width: 50ch;
   color: var(--text);
   font: 500 clamp(0.95rem, 2.4vw, 1.1rem)/1.45 Arial, sans-serif;
+}
+
+.subcopybold {
+  font: 700 clamp(0.95rem, 2.4vw, 1.1rem)/1.45 Arial, sans-serif;
+  margin: 0.75rem 0 0;
+  max-width: 50ch;
+  color: var(--text);
+  font-size: xx-large;
 }
 
 .actions {
