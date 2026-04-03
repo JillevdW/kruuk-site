@@ -33,13 +33,17 @@ export default function LivePage() {
 
         {/* <p className={styles.kicker}>Underground Poster Motion / One Page Experience</p> */}
 
-        <h1 className={styles.title}>
-          THE KRUUK
-          <span>I SHOULDN'T NEED IT</span>
-        </h1>
+        <div>
+          <h1 className={styles.title}>
+            THE KRUUK
+            <span>I SHOULDN'T NEED IT</span>
+          </h1>
+          <div className={styles.sw_glitch_block_1}></div>
+          <div className={styles.sw_glitch_block_2}></div>
+        </div>
 
         <p className={styles.subcopybold}>
-          Out now on <a href="" className="hover:underline text-band-accent">all streaming services</a>.
+          Presave now on <a href="https://play.mw.fm/i-shouldn-t-need-it" className="hover:underline text-band-accent">all streaming services</a>.
         </p>
 
         {/* <div className={styles.actions}>
