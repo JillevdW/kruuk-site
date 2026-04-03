@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { KineticGigList } from "./live/_components/kinetic-giglist";
+import { featuredStoreItems } from "@/lib/store-items";
 import styles from "./live/page.module.css";
 
 const overlays = [
@@ -27,7 +27,7 @@ export default function LivePage() {
 
       <section className={styles.hero}>
         <div className={styles.imageLayer}>
-          <Image src="/assets/images/background2.jpeg" alt="Blurred black and white band portrait" fill priority sizes="100vw" />
+          <Image src="/assets/images/background2.jpeg" alt="Blurred black and white band portrait" fill priority sizes="100vw" style={{objectFit: "cover"}} />
           <div className={styles.vignette} />
         </div>
 

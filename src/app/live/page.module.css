@@ -35,7 +35,8 @@
 
 .topbar,
 .hero,
-.infoGrid {
+.infoGrid,
+.storeSection {
   position: relative;
   z-index: 1;
 }
@@ -72,10 +73,11 @@
 
 .hero {
   margin-top: 0.8rem;
-  min-height: 74vh;
+  min-height: 20rem;
   border: 1px solid rgba(214, 197, 42, 0.35);
   padding: 0.8rem;
   position: relative;
+  margin-bottom: 0.2rem;
 }
 
 .imageLayer {
@@ -317,6 +319,173 @@
   gap: 0.6rem;
 }
 
+.storeSection {
+  margin-top: 0.75rem;
+}
+
+.storeHeader {
+  margin-bottom: 0.6rem;
+}
+
+.storeLead {
+  margin: 0.28rem 0 0;
+  color: var(--muted);
+}
+
+.storeGrid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(16rem, 84%);
+  gap: 0.6rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(251, 234, 38, 0.65) rgba(255, 255, 255, 0.06);
+}
+
+.storeCard {
+  --store-accent: var(--accent);
+  display: grid;
+  gap: 0;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid color-mix(in srgb, var(--store-accent) 44%, black 56%);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--store-accent) 10%, rgba(10, 10, 10, 0.92)) 0%, rgba(10, 10, 10, 0.8) 100%);
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.26);
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease,
+    background 140ms ease,
+    box-shadow 140ms ease;
+  scroll-snap-align: start;
+}
+
+.storeCard:hover,
+.storeCard:focus-visible {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--store-accent) 70%, white 30%);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--store-accent) 18%, rgba(10, 10, 10, 0.95)) 0%, rgba(10, 10, 10, 0.82) 100%);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.34);
+}
+
+.storeCardYellow {
+  --store-accent: #FBEA26;
+}
+
+.storeCardBlue {
+  --store-accent: #8CD0E2;
+}
+
+.storeCardGreen {
+  --store-accent: #83F007;
+}
+
+.storeCardPink {
+  --store-accent: #F83BA4;
+}
+
+.storeMetaRow,
+.storeFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0 0.78rem;
+}
+
+.storeMetaRow {
+  margin-top: 0.72rem;
+}
+
+.storeBody {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.55rem 0.78rem 0.8rem;
+}
+
+.storeImageWrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-bottom: 1px solid color-mix(in srgb, var(--store-accent) 30%, black 70%);
+}
+
+.storeImage {
+  object-fit: cover;
+  transform: scale(1.02);
+  filter: contrast(1.08) saturate(1.05);
+  transition: transform 220ms ease;
+}
+
+.storeImageOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.5) 100%),
+    radial-gradient(circle at top right, color-mix(in srgb, var(--store-accent) 28%, transparent) 0%, transparent 42%);
+}
+
+.storeVendor,
+.storeFormat,
+.storeArrow {
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font: 700 0.62rem/1.2 "Arial Narrow", Arial, sans-serif;
+}
+
+.storeVendor {
+  color: var(--store-accent);
+}
+
+.storeFormat {
+  color: var(--muted);
+  text-align: right;
+}
+
+.storeTitle {
+  margin: 0;
+  font-family: var(--font-heading), "Arial Narrow", "Arial Black", sans-serif;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.storeBlurb {
+  margin: 0;
+  max-width: 34ch;
+  color: var(--text);
+  font: 500 0.95rem/1.45 Arial, sans-serif;
+}
+
+.storePrice {
+  color: var(--text);
+  font: 700 0.92rem/1.2 "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.storeArrow {
+  color: var(--store-accent);
+}
+
+.storeFooter {
+  padding-bottom: 0.78rem;
+}
+
+.storeCard:hover .storeImage,
+.storeCard:focus-visible .storeImage {
+  transform: scale(1.05);
+}
+
+.storeCard:hover .storeArrow,
+.storeCard:focus-visible .storeArrow {
+  text-decoration: underline;
+}
+
 .infoGrid article {
   border: 1px solid rgba(143, 132, 32, 0.45);
   background: rgba(10, 10, 10, 0.72);
@@ -355,7 +524,7 @@
   }
 
   .hero {
-    min-height: 78vh;
+    /* min-height: 78vh; */
     padding: 1rem;
   }
 
@@ -365,5 +534,9 @@
 
   .infoGrid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .storeGrid {
+    grid-auto-columns: minmax(17rem, 31%);
   }
 }
