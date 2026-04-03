@@ -498,6 +498,7 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font: 700 0.62rem/1.2 "Arial Narrow", Arial, sans-serif;
+  font-size: small;
 }
 
 .aboutCopy {
@@ -505,6 +506,7 @@
   color: var(--text);
   max-width: 62ch;
   font: 500 0.9rem/1.5 Arial, sans-serif;
+  font-size: large;
 }
 
 @keyframes drift {

@@ -43,7 +43,7 @@ export default function LivePage() {
         </div>
 
         <p className={styles.subcopybold}>
-          Presave now on <a href="https://play.mw.fm/i-shouldn-t-need-it" className="hover:underline text-band-accent">all streaming services</a>.
+          Listen now on <a href="https://play.mw.fm/i-shouldn-t-need-it" className="hover:underline text-band-accent">all streaming services</a>.
         </p>
 
         {/* <div className={styles.actions}>

@@ -14,7 +14,7 @@ export type LinktreePage = {
 
 export const linktreePages: LinktreePage[] = [
   {
-    slug: "the-kruuk",
+    slug: "",
     title: "The Kruuk",
     description:
       "Alternative rock with ska, reggae, and punk in the bloodstream. Find the latest single, socials, live dates, and booking details here.",
