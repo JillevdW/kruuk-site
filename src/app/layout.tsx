@@ -2,12 +2,18 @@ import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
 
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const twCenHeading = localFont({
+  src: "../../public/assets/fonts/TwCenMTStdExtraBold.otf",
+  variable: "--font-heading",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: `The Kruuk`,
@@ -58,7 +64,11 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
-        className={cn(inter.className, "relative dark:bg-slate-950 dark:text-slate-300 bg-[#FEFEFE] page-background-image backdrop-blur-lg overflow-y-scroll overflow-x-clip flex flex-col")}
+        className={cn(
+          inter.className,
+          twCenHeading.variable,
+          "relative dark:bg-slate-950 dark:text-slate-300 bg-[#FEFEFE] page-background-image backdrop-blur-lg overflow-y-scroll overflow-x-clip flex flex-col",
+        )}
       >
         <div className="w-full h-full absolute overflow-auto z-[-1]">
           <iframe className="

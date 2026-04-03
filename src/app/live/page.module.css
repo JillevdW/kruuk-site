@@ -113,7 +113,10 @@
 
 .title {
   margin: 0.55rem 0 0;
-  font: 900 clamp(2.4rem, 13vw, 8.6rem)/0.82 "Arial Narrow", "Arial Black", sans-serif;
+  font-family: var(--font-heading), "Arial Narrow", "Arial Black", sans-serif;
+  font-size: clamp(2.4rem, 13vw, 8.6rem);
+  font-weight: 900;
+  line-height: 0.82;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   max-width: 10ch;

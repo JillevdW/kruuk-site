@@ -33,6 +33,9 @@ const config: Config = {
       letterSpacing: {
         tighter: "-.04em",
       },
+      fontFamily: {
+        heading: ["var(--font-heading)", "sans-serif"],
+      },
       fontSize: {
         "5xl": "2.5rem",
         "6xl": "2.75rem",
