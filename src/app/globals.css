@@ -6,9 +6,25 @@
     --color-band-pink: #F83BA4;
     --color-band-blue: #0259C9;
     --color-band-ligt-blue: #8CD0E2;
-    --color-band-yellow: #D1FE00;
+    --color-band-yellow: #FBEA26;
     --color-band-green: #83F007;
     --color-band-purple: #700DCD;
+    --color-band-accent: #FBEA26;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading), sans-serif;
+}
+
+.paragraph-arial-narrow {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .footer-image {
@@ -19,10 +35,11 @@
 }
 
 .page-background-image {
-    background-image: image-set(
+    /* background-image: image-set(
         url('/assets/images/background.avif') type('image/avif'),
         url('/assets/images/background.jpg') type('image/jpeg')
-    )
+    ) */
+    background: linear-gradient(#0a0a0a 0%, #151515 100%);
 }
 
 .scrap_1 {

@@ -1,0 +1,241 @@
+.page {
+  --linktree-accent: #FBEA26;
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(180deg, #0a0a0a 0%, #151515 100%);
+  color: #f3f3f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.11;
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.07) 0,
+    rgba(255, 255, 255, 0.07) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.shell {
+  width: min(100%, 36rem);
+  margin: 0 auto;
+  display: grid;
+  gap: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(251, 234, 38, 0.35);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.imageWrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.imageWrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.78) 100%),
+    radial-gradient(circle at 50% 25%, transparent 0%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+.image {
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.08);
+  transform: scale(1.04);
+}
+
+.heroBody {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  padding: 0.9rem;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-heading), "Arial Narrow", "Arial Black", sans-serif;
+  font-size: clamp(2.4rem, 9vw, 4.8rem);
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.linkItem {
+  margin: 0;
+}
+
+.link {
+  display: grid;
+  gap: 0.18rem;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid color-mix(in srgb, var(--link-bg) 88%, white 12%);
+  padding: 1rem 1rem 1.05rem;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--link-bg) 94%, white 6%) 0%, color-mix(in srgb, var(--link-bg) 76%, black 24%) 100%),
+    rgba(10, 10, 10, 0.84);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--link-bg) 36%, transparent), 0 14px 36px var(--link-shadow);
+  transform: rotate(var(--link-tilt, 0deg));
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease,
+    background 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.link:hover,
+.link:focus-visible {
+  transform: translateY(-2px) rotate(0deg);
+  border-color: color-mix(in srgb, var(--link-bg) 92%, white 8%);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--link-bg) 100%, white 0%) 0%, color-mix(in srgb, var(--link-bg) 80%, black 20%) 100%),
+    rgba(10, 10, 10, 0.92);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--link-bg) 48%, transparent), 0 18px 44px var(--link-shadow);
+}
+
+.linkMeta {
+  color: color-mix(in srgb, var(--link-ink) 78%, white 22%);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font: 700 0.62rem/1.1 "Courier New", monospace;
+}
+
+.linkLabel {
+  color: var(--link-ink);
+  font: 800 clamp(1.2rem, 4vw, 1.55rem)/1 "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.linkDescription {
+  color: color-mix(in srgb, var(--link-ink) 82%, white 18%);
+  font: 600 0.86rem/1.35 Arial, sans-serif;
+}
+
+.index {
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(180deg, #0a0a0a 0%, #151515 100%);
+  color: #f3f3f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.index::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.11;
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.07) 0,
+    rgba(255, 255, 255, 0.07) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.indexShell {
+  width: min(100%, 70rem);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.indexHeader {
+  margin-bottom: 1.25rem;
+}
+
+.indexTitle {
+  margin: 0;
+  font-family: var(--font-heading), "Arial Narrow", "Arial Black", sans-serif;
+  font-size: clamp(2.4rem, 8vw, 5rem);
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.indexLead {
+  margin: 0.75rem 0 0;
+  max-width: 40rem;
+  color: #d7d7d0;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.indexLink {
+  display: block;
+  border: 1px solid rgba(251, 234, 38, 0.24);
+  padding: 1rem;
+  background: rgba(10, 10, 10, 0.72);
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease;
+}
+
+.indexLink:hover,
+.indexLink:focus-visible {
+  transform: translateY(-1px);
+  border-color: #FBEA26;
+}
+
+.indexLabel {
+  margin: 0;
+  color: #FBEA26;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font: 700 0.72rem/1.2 "Arial Narrow", Arial, sans-serif;
+}
+
+.indexCardTitle {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-heading), "Arial Narrow", "Arial Black", sans-serif;
+  font-size: 2rem;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.indexCardText {
+  margin: 0.55rem 0 0;
+  color: #d7d7d0;
+}
+
+@media (min-width: 720px) {
+  .page,
+  .index {
+    padding: 1rem 1.25rem 1.4rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
