@@ -40,6 +40,9 @@ export default function LivePage() {
           </h1>
           <div className={styles.sw_glitch_block_1}></div>
           <div className={styles.sw_glitch_block_2}></div>
+          <div className={styles.sw_glitch_block_3}></div>
+          <div className={styles.sw_glitch_block_4}></div>
+          <div className={styles.sw_glitch_block_5}></div>
         </div>
 
         <p className={styles.subcopybold}>
