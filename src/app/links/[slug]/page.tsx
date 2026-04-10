@@ -27,10 +27,13 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const page = getLinktreePage(slug);
+  let page = getLinktreePage(slug);
 
   if (!page) {
-    return {};
+    page = getLinktreePage("");
+    if (!page) {
+      return {title: "404", description: "404"};
+    }
   }
 
   return {
@@ -45,6 +48,7 @@ export default async function LinktreePage({ params }: PageProps) {
 
   if (!page) {
     notFound();
+    // return ("404");
   }
 
   return (
