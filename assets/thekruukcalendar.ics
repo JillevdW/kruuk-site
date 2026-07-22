@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//sebbo.net//ical-generator//EN
+METHOD:REQUEST
+NAME:The Kruuk Gigs
+X-WR-CALNAME:The Kruuk Gigs
+BEGIN:VEVENT
+UID:4664a8fc-4b3b-4a4b-b428-754d27414413
+SEQUENCE:0
+DTSTAMP:20260722T021116Z
+DTSTART:20260919T200000Z
+DTEND:20260919T210000Z
+SUMMARY:De Kroon
+LOCATION:De Kroon\, Wormerveer
+DESCRIPTION:
+URL;VALUE=URI:https://www.bandsintown.com/e/107854332?app_id=eee689783e48a
+ 2dd13a14ea332a44091&came_from=267&utm_medium=api&utm_source=public_api&utm
+ _campaign=event
+END:VEVENT
+END:VCALENDAR
